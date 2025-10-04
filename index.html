@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deborah Caval - Desenvolvedora com Visão de Produto</title>
+
+    <!-- Meta Tags para SEO -->
+    <meta name="description" content="Portfólio de Deborah Caval, desenvolvedora full stack com vasta experiência em marketing estratégico. Crio soluções de software que resolvem problemas reais de negócio.">
+    <meta name="keywords" content="desenvolvedora full stack, marketing estratégico, visão de produto, automação, JavaScript, Python, React, Node.js, portfólio">
+    <meta name="author" content="Deborah Caval">
+
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Deborah Caval - Desenvolvedora com Visão de Produto">
+    <meta property="og:description" content="Conectando código e estratégia para construir produtos digitais de alto impacto.">
+    <meta property="og:image" content="avatar.png">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        .dark {
+    background: #1a202c; /* Cor de fundo escura */
+    color: #e2e8f0; /* Texto claro */
+}
+.dark .glass-card {
+    background: rgba(30, 41, 59, 0.8); /* Ajuste para o tema escuro */
+    border-color: rgba(48, 63, 89, 0.5);
+}
+.dark .gradient-text {
+    background: linear-gradient(135deg, #f6ad55, #fb923c); /* Ajuste no gradiente */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}.dark {
+  background: #1a202c; /* Fundo escuro */
+  color: #e2e8f0; /* Texto claro */
+}
+.dark .glass-card {
+  background: rgba(30, 41, 59, 0.8); /* Ajuste para glass-card no escuro */
+  border-color: rgba(48, 63, 89, 0.5);
+}
+.dark .text-white {
+  color: #e2e8f0; /* Texto ajustado para escuro */
+}
+.dark .bg-aurora {
+  background: linear-gradient(135deg, #000 0%, #111827 20%, #4c1d95 40%, #92400e 60%, #9a3412 80%, #991b1b 100%); /* Gradiente escuro */
+}
+        body {
+            font-family: 'Inter', ui-sans-serif, system-ui;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .animate-delay-100 { animation-delay: 100ms; }
+        .animate-delay-200 { animation-delay: 200ms; }
+        .animate-delay-300 { animation-delay: 300ms; }
+        .animate-delay-400 { animation-delay: 400ms; }
+        .animate-delay-500 { animation-delay: 500ms; }
+        .animate-delay-600 { animation-delay: 600ms; }
+
+        [data-animate] {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .typewriter {
+            overflow: hidden;
+            border-right: 2px solid #f97316;
+            white-space: nowrap;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #f97316; }
+        }
+
+        .bg-aurora {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 20%, #7c3aed 40%, #f59e0b 60%, #ea580c 80%, #dc2626 100%);
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!-- Background dinâmico -->
+<div class="fixed inset-0 -z-10">
+    <div class="absolute inset-0 bg-aurora"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-black/50 via-transparent to-black/30"></div>
+    <!-- Partículas flutuantes -->
+    <div class="absolute top-20 left-20 w-2 h-2 bg-orange-400/30 rounded-full animate-float"></div>
+    <div class="absolute top-40 right-32 w-1 h-1 bg-purple-400/40 rounded-full animate-float animate-delay-200"></div>
+    <div class="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-yellow-400/30 rounded-full animate-float animate-delay-400"></div>
+    <div class="absolute bottom-20 right-20 w-2 h-2 bg-red-400/30 rounded-full animate-float animate-delay-600"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 p-4 sm:p-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="glass-card rounded-2xl px-6 py-4 transition-all duration-300">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-3" data-animate>
+                    <div class="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-400/30 flex items-center justify-center">
+                        <i data-lucide="code" class="w-5 h-5 text-orange-400"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs tracking-widest text-white/60 uppercase">Portfolio</div>
+                        <div class="text-lg font-semibold tracking-tight">Deborah</div>
+                    </div>
+                </div>
+
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex items-center gap-8" data-animate>
+                    <a href="#home" class="text-sm text-white/80 hover:text-white transition-colors">Início</a>
+                    <a href="#about" class="text-sm text-white/80 hover:text-white transition-colors">Sobre</a>
+                    <a href="#services" class="text-sm text-white/80 hover:text-white transition-colors">Serviços</a>
+                    <a href="#projects" class="text-sm text-white/80 hover:text-white transition-colors">Projetos</a>
+                    <a href="#contact" class="text-sm text-white/80 hover:text-white transition-colors">Contato</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="flex items-center gap-4" data-animate>
+                    <button id="theme-toggle" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center hover:bg-white/20 transition-all">
+                        <i data-lucide="moon" class="w-4 h-4 hidden dark:block"></i> <!-- Ícone escuro (lua) -->
+                        <i data-lucide="sun" class="w-4 h-4 block dark:hidden"></i> <!-- Ícone claro (sol) -->
+                    </button>
+                    <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-white shadow-lg transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        Vamos Conversar
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden w-10 h-10 rounded-xl glass-card flex items-center justify-center">
+                        <i data-lucide="menu" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed inset-0 z-40 hidden">
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" id="mobile-menu-overlay"></div>
+    <div class="absolute top-20 left-4 right-4">
+        <div class="glass-card rounded-2xl p-6">
+            <div class="flex flex-col gap-4">
+                <a href="#home" class="text-white/80 hover:text-white transition-colors mobile-menu-link">Início</a>
+                <a href="#about" class="text-white/80 hover:text-white transition-colors mobile-menu-link">Sobre</a>
+                <a href="#services" class="text-white/80 hover:text-white transition-colors mobile-menu-link">Serviços</a>
+                <a href="#projects" class="text-white/80 hover:text-white transition-colors mobile-menu-link">Projetos</a>
+                <a href="#contact" class="text-white/80 hover:text-white transition-colors mobile-menu-link">Contato</a>
+                <div class="border-t border-white/10 pt-4">
+                    <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-white w-full justify-center" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        Vamos Conversar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<main class="relative">
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center p-4 sm:p-6">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="space-y-8">
+                    <div class="space-y-6" data-animate>
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm">
+                            <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                            Disponível para novos projetos
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                            Olá, eu sou a <span class="gradient-text">Deborah</span>
+                        </h1>
+
+                        <div class="text-xl sm:text-2xl text-white/80">
+                            <span id="typewriter-text" class="typewriter">Desenvolvedora Full Stack com Visão de Produto</span>
+                        </div>
+
+                        <p class="text-lg text-white/70 max-w-2xl leading-relaxed">
+                            Transformo ideias em soluções digitais eficazes, combinando desenvolvimento web moderno
+                            com estratégias de marketing inteligentes para impulsionar o crescimento do seu negócio.
+                        </p>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4" data-animate>
+                        <a href="#projects" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-white font-medium shadow-lg transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+                            <i data-lucide="eye" class="w-4 h-4"></i>
+                            Ver Meus Projetos
+                        </a>
+                        <a href="./data/curriculoatualizadodev2025.pdf" download class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl glass-card text-white font-medium transition-all duration-300 hover:bg-white/20">
+                            <i data-lucide="download" class="w-4 h-4"></i>
+                            Download CV
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-6 pt-8" data-animate>
+                        <div class="text-center">
+                            <div class="text-2xl sm:text-3xl font-bold gradient-text" data-count="15">15+</div>
+                            <div class="text-sm text-white/60">Projetos</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl sm:text-3xl font-bold gradient-text" data-count="4">4+</div>
+                            <div class="text-sm text-white/60">Anos Marketing</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl sm:text-3xl font-bold gradient-text" data-count="2">2</div>
+                            <div class="text-sm text-white/60">Anos Dev</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="relative" data-animate>
+                    <div class="relative w-full max-w-md mx-auto">
+                        <!-- Glow effect -->
+                        <div class="absolute inset-0 bg-orange-500/20 rounded-3xl blur-3xl animate-glow"></div>
+
+                        <!-- Image container -->
+                        <div class="relative glass-card rounded-3xl p-8 transition-all duration-300 hover:scale-105">
+                            <img src="./images/avatar.png" alt="Deborah" class="w-full h-auto rounded-2xl" onerror="console.error('Erro ao carregar imagem:', this.src)">
+
+                            <!-- Floating elements -->
+                            <div class="absolute -top-4 -right-4 w-16 h-16 glass-card rounded-2xl flex items-center justify-center animate-float">
+                                <i data-lucide="code-2" class="w-6 h-6 text-orange-400"></i>
+                            </div>
+
+                            <div class="absolute -bottom-4 -left-4 w-16 h-16 glass-card rounded-2xl flex items-center justify-center animate-float animate-delay-300">
+                                <i data-lucide="palette" class="w-6 h-6 text-purple-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div class="relative" data-animate>
+                    <div class="glass-card rounded-3xl p-8">
+                        <img src="./images/avatar2.png" alt="Sobre Deborah" class="w-full h-auto rounded-2xl">
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="space-y-8" data-animate>
+                    <div class="space-y-4">
+                        <h2 class="text-3xl sm:text-4xl font-bold">
+                            Sobre <span class="gradient-text">Mim</span>
+                        </h2>
+                        <p class="text-lg text-white/80 leading-relaxed">
+                            A 4 anos atuando com Marketing Estratégico, minha principal motivação sempre foi entender profundamente
+                            o que conecta um produto ao seu público. Mergulhei em dados, criei campanhas e otimizei jornadas de usuário
+                            com um objetivo claro: gerar valor
+                            e uma experiência positiva para o cliente. Essa jornada me trouxe a uma nova paixão: a vontade de não
+                            apenas planejar, mas também construir as soluções que resolvem esses desafios. Foi essa motivação que me
+                            levou a uma transição de carreira para o Desenvolvimento de Software. Hoje, aplico a mesma mentalidade
+                            estratégica e foco no usuário para escrever código limpo, eficiente e escalável.
+                        </p>
+                        <p class="text-white/70 leading-relaxed">
+                            Minha experiência prévia em marketing me proporciona uma perspectiva única,
+                            permitindo-me pensar criticamente sobre o impacto do produto, colaborar efetivamente com
+                            equipas de design e negócio, e nunca perder de vista o "porquê" por trás de cada funcionalidade.
+                            Busco uma oportunidade onde possa combinar a minha paixão por tecnologia com a minha visão de negócio
+                            para criar produtos que as pessoas amem usar.
+                        </p>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-white/80">JavaScript</span>
+                            </div>
+                            <div class="w-full bg-white/10 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-orange-500 to-orange-400 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-white/80">React</span>
+                            </div>
+                            <div class="w-full bg-white/10 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-purple-500 to-purple-400 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-white/80">Node.js</span>
+                            </div>
+                            <div class="w-full bg-white/10 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-green-500 to-green-400 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-white/80">Python</span>
+                            </div>
+                            <div class="w-full bg-white/10 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-400 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center space-y-4 mb-16" data-animate>
+                <h2 class="text-3xl sm:text-4xl font-bold">
+                    Meus <span class="gradient-text">Serviços</span>
+                </h2>
+                <p class="text-lg text-white/70 max-w-2xl mx-auto">
+                    Ofereço soluções completas que combinam desenvolvimento técnico com estratégia de negócio
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8" data-animate>
+                <!-- Service 1 -->
+                <div class="glass-card rounded-2xl p-8 text-center transition-all duration-300 hover:scale-105">
+                    <div class="w-16 h-16 rounded-2xl bg-orange-500/20 border border-orange-400/30 flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="code" class="w-8 h-8 text-orange-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Desenvolvimento Web</h3>
+                    <p class="text-white/70 text-sm">Criação de sites e aplicações web responsivas, modernas e otimizadas para performance e SEO.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card rounded-2xl p-8 text-center transition-all duration-300 hover:scale-105">
+                    <div class="w-16 h-16 rounded-2xl bg-purple-500/20 border border-purple-400/30 flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="smartphone" class="w-8 h-8 text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Aplicações Mobile</h3>
+                    <p class="text-white/70 text-sm">Desenvolvimento de aplicativos mobile nativos e híbridos com foco na experiência do usuário.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card rounded-2xl p-8 text-center transition-all duration-300 hover:scale-105">
+                    <div class="w-16 h-16 rounded-2xl bg-green-500/20 border border-green-400/30 flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-green-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Marketing Digital</h3>
+                    <p class="text-white/70 text-sm">Estratégias de marketing digital, SEO, tráfego pago e automações para crescimento do seu negócio.</p>
+                </div>
+
+                <!-- Service 4: Novo - Automação e IA -->
+                <div class="glass-card rounded-2xl p-8 text-center transition-all duration-300 hover:scale-105">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="bot" class="w-8 h-8 text-blue-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Automação e IA</h3>
+                    <p class="text-white/70 text-sm">Integração de sistemas de automação e IA para otimizar processos e melhorar a eficiência operacional.</p>
+                </div>
+
+                <!-- Service 5: Novo - Consultoria de Produto -->
+                <div class="glass-card rounded-2xl p-8 text-center transition-all duration-300 hover:scale-105">
+                    <div class="w-16 h-16 rounded-2xl bg-cyan-500/20 border border-cyan-400/30 flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="lightbulb" class="w-8 h-8 text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Consultoria de Produto</h3>
+                    <p class="text-white/70 text-sm">Análise estratégica e consultoria para desenvolvimento de produtos digitais com foco em resultados de negócio.</p>
+                </div>
+
+                <!-- Service 6: Novo - Integração de Sistemas -->
+                <div class="glass-card rounded-2xl p-8 text-center transition-all duration-300 hover:scale-105">
+                    <div class="w-16 h-16 rounded-2xl bg-pink-500/20 border border-pink-400/30 flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="link" class="w-8 h-8 text-pink-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Integração de Sistemas</h3>
+                    <p class="text-white/70 text-sm">Conexão e sincronização de diferentes plataformas e APIs para criar fluxos de trabalho eficientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center space-y-4 mb-16" data-animate>
+                <h2 class="text-3xl sm:text-4xl font-bold">
+                    Meus <span class="gradient-text">Projetos</span>
+                </h2>
+                <p class="text-lg text-white/70 max-w-2xl mx-auto">
+                    Uma seleção dos meus trabalhos mais recentes, desde projetos interativos até soluções empresariais
+                </p>
+            </div>
+
+            <!-- Project Filter -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12" data-animate>
+                <button class="filter-btn active px-4 py-2 rounded-xl glass-card text-sm font-medium transition-all duration-300 hover:bg-white/20" data-filter="all">
+                    Todos
+                </button>
+                <button class="filter-btn px-4 py-2 rounded-xl glass-card text-sm font-medium transition-all duration-300 hover:bg-white/20" data-filter="desenvolvimento">
+                    Desenvolvimento
+                </button>
+                <button class="filter-btn px-4 py-2 rounded-xl glass-card text-sm font-medium transition-all duration-300 hover:bg-white/20" data-filter="marketing">
+                    Marketing
+                </button>
+                <button class="filter-btn px-4 py-2 rounded-xl glass-card text-sm font-medium transition-all duration-300 hover:bg-white/20" data-filter="automacao">
+                    Automação
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 1: Jogo de Adivinhação (MANTIDO - tem conteúdo) -->
+                <div class="project-item glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105" data-category="desenvolvimento" data-animate>
+                    <div class="relative h-48 bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                        <i data-lucide="gamepad-2" class="w-16 h-16 text-purple-400"></i>
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 border border-purple-400/30 rounded-full text-purple-300">Jogo</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">🎯 Jogo de Adivinhação</h3>
+                        <p class="text-white/70 text-sm mb-4">Jogo interativo de adivinhação de números com validação de entrada, feedback dinâmico e interface responsiva.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs bg-yellow-500/20 border border-yellow-400/30 rounded-full text-yellow-300">JavaScript</span>
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 border border-purple-400/30 rounded-full text-purple-300">Lógica</span>
+                            <span class="px-2 py-1 text-xs bg-pink-500/20 border border-pink-400/30 rounded-full text-pink-300">Interativo</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f97316, #ea580c);" onclick="document.getElementById('modal-adivinhacao').style.display='block'">
+                                <i data-lucide="play" class="w-4 h-4 inline mr-2"></i>Jogar Agora
+                            </button>
+                            <button class="px-4 py-2 rounded-xl glass-card text-sm font-medium transition-all duration-300 hover:bg-white/20">
+                                <i data-lucide="code" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Calculadora Inteligente (MANTIDO - tem conteúdo) -->
+                <div class="project-item glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105" data-category="desenvolvimento" data-animate>
+                    <div class="relative h-48 bg-gradient-to-br from-green-500/20 to-emerald-500/20 flex items-center justify-center">
+                        <i data-lucide="calculator" class="w-16 h-16 text-green-400"></i>
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 text-xs bg-green-500/20 border border-green-400/30 rounded-full text-green-300">Ferramenta</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">📊 Calculadora Inteligente</h3>
+                        <p class="text-white/70 text-sm mb-4">Calculadora com validação de entrada, sanitização de dados e interface responsiva para operações matemáticas básicas.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs bg-yellow-500/20 border border-yellow-400/30 rounded-full text-yellow-300">JavaScript</span>
+                            <span class="px-2 py-1 text-xs bg-green-500/20 border border-green-400/30 rounded-full text-green-300">Bootstrap</span>
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 border border-purple-400/30 rounded-full text-purple-300">Validação</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f97316, #ea580c);" onclick="document.getElementById('modal-calculadora').style.display='block'">
+                                <i data-lucide="calculator" class="w-4 h-4 inline mr-2"></i>Usar Agora
+                            </button>
+                            <button class="px-4 py-2 rounded-xl glass-card text-sm font-medium transition-all duration-300 hover:bg-white/20">
+                                <i data-lucide="code" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Verificador Par/Ímpar (MANTIDO - tem conteúdo) -->
+                <div class="project-item glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105" data-category="desenvolvimento" data-animate>
+                    <div class="relative h-48 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center">
+                        <i data-lucide="search" class="w-16 h-16 text-cyan-400"></i>
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 text-xs bg-cyan-500/20 border border-cyan-400/30 rounded-full text-cyan-300">Algoritmo</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">🔍 Verificador Par/Ímpar</h3>
+                        <p class="text-white/70 text-sm mb-4">Ferramenta para verificação de números pares e ímpares com validação robusta e feedback visual imediato.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs bg-yellow-500/20 border border-yellow-400/30 rounded-full text-yellow-300">JavaScript</span>
+                            <span class="px-2 py-1 text-xs bg-cyan-500/20 border border-cyan-400/30 rounded-full text-cyan-300">Algoritmos</span>
+                            <span class="px-2 py-1 text-xs bg-red-500/20 border border-red-400/30 rounded-full text-red-300">UX/UI</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f97316, #ea580c);" onclick="document.getElementById('modal-parimpar').style.display='block'">
+                                <i data-lucide="search" class="w-4 h-4 inline mr-2"></i>Testar Agora
+                            </button>
+                            <button class="px-4 py-2 rounded-xl glass-card text-sm font-medium transition-all duration-300 hover:bg-white/20">
+                                <i data-lucide="code" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NOVOS PROJETOS REAIS (apenas menção) -->
+
+                <!-- Project 4: Automação de Atendimento com IA -->
+                <div class="project-item glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105" data-category="automacao" data-animate>
+                    <div class="relative h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
+                        <i data-lucide="bot" class="w-16 h-16 text-blue-400"></i>
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 text-xs bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-300">MVP</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">🤖 Automação de Atendimento - Clínica BellaVitta</h3>
+                        <p class="text-white/70 text-sm mb-4">Sistema de atendimento automatizado via WhatsApp com IA generativa para explicar procedimentos estéticos e agendar consultas.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs bg-green-500/20 border border-green-400/30 rounded-full text-green-300">Node.js</span>
+                            <span class="px-2 py-1 text-xs bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-300">OpenAI</span>
+                            <span class="px-2 py-1 text-xs bg-yellow-500/20 border border-yellow-400/30 rounded-full text-yellow-300">Z-API</span>
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 border border-purple-400/30 rounded-full text-purple-300">WhatsApp</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+                                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>Ver Detalhes
+                            </button>
+                            <button class="px-4 py-2 rounded-xl glass-card text-sm font-medium transition-all duration-300 hover:bg-white/20">
+                                <i data-lucide="code" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Sistema de Captação de Leads -->
+                <div class="project-item glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105" data-category="marketing" data-animate>
+                    <div class="relative h-48 bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center">
+                        <i data-lucide="target" class="w-16 h-16 text-orange-400"></i>
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 text-xs bg-orange-500/20 border border-orange-400/30 rounded-full text-orange-300">Sistema</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">🎯 Sistema de Captação de Leads</h3>
+                        <p class="text-white/70 text-sm mb-4">Landing page integrada com WhatsApp e Google Sheets, superando desafios de CORS e autenticação para automação de vendas.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs bg-orange-500/20 border border-orange-400/30 rounded-full text-orange-300">HTML5</span>
+                            <span class="px-2 py-1 text-xs bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-300">CSS3</span>
+                            <span class="px-2 py-1 text-xs bg-yellow-500/20 border border-yellow-400/30 rounded-full text-yellow-300">JavaScript</span>
+                            <span class="px-2 py-1 text-xs bg-green-500/20 border border-green-400/30 rounded-full text-green-300">Google Sheets</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+                                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>Ver Detalhes
+                            </button>
+                            <button class="px-4 py-2 rounded-xl glass-card text-sm font-medium transition-all duration-300 hover:bg-white/20">
+                                <i data-lucide="code" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: ClaraMente APP -->
+                <div class="project-item glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105" data-category="desenvolvimento" data-animate>
+                    <div class="relative h-48 bg-gradient-to-br from-cyan-500/20 to-teal-500/20 flex items-center justify-center">
+                        <i data-lucide="lightbulb" class="w-16 h-16 text-cyan-400"></i>
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 text-xs bg-cyan-500/20 border border-cyan-400/30 rounded-full text-cyan-300">Produto</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">💡 ClaraMente APP</h3>
+                        <p class="text-white/70 text-sm mb-4">Aplicação para produtividade e motivação com proposta real de mercado, demonstrando visão completa de produto digital.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs bg-cyan-500/20 border border-cyan-400/30 rounded-full text-cyan-300">React</span>
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 border border-purple-400/30 rounded-full text-purple-300">Visão de Produto</span>
+                            <span class="px-2 py-1 text-xs bg-red-500/20 border border-red-400/30 rounded-full text-red-300">UX/UI</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+                                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>Ver Detalhes
+                            </button>
+                            <button class="px-4 py-2 rounded-xl glass-card text-sm font-medium transition-all duration-300 hover:bg-white/20">
+                                <i data-lucide="code" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Simulação de Cibersegurança -->
+                <div class="project-item glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105" data-category="desenvolvimento" data-animate>
+                    <div class="relative h-48 bg-gradient-to-br from-red-500/20 to-pink-500/20 flex items-center justify-center">
+                        <i data-lucide="shield" class="w-16 h-16 text-red-400"></i>
+                        <div class="absolute top-4 right-4">
+                            <span class="px-2 py-1 text-xs bg-red-500/20 border border-red-400/30 rounded-full text-red-300">Full Stack</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">🛡️ Simulação "Cashback Milionário"</h3>
+                        <p class="text-white/70 text-sm mb-4">Projeto educacional full stack sobre cibersegurança e engenharia social, simulando phishing para conscientização.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-300">Python</span>
+                            <span class="px-2 py-1 text-xs bg-green-500/20 border border-green-400/30 rounded-full text-green-300">Flask</span>
+                            <span class="px-2 py-1 text-xs bg-red-500/20 border border-red-400/30 rounded-full text-red-300">Cibersegurança</span>
+                            <span class="px-2 py-1 text-xs bg-purple-500/20 border border-purple-400/30 rounded-full text-purple-300">MySQL</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button class="flex-1 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+                                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>Ver Detalhes
+                            </button>
+                            <button class="px-4 py-2 rounded-xl glass-card text-sm font-medium transition-all duration-300 hover:bg-white/20">
+                                <i data-lucide="code" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modais dos Projetos (MANTIDOS - só os que têm conteúdo) -->
+            <!-- 1. Jogo de Adivinhação -->
+            <div id="modal-adivinhacao" class="fixed inset-0 bg-black/70 flex items-center justify-center hidden z-50">
+                <div class="glass-card rounded-2xl p-6 max-w-lg w-full relative mx-auto">
+                    <button class="absolute top-3 right-3 text-white/70 hover:text-white" onclick="closeModal('modal-adivinhacao')">✖</button>
+                    <h2 class="text-xl font-bold mb-4">🎯 Jogo de Adivinhação</h2>
+                    <p class="mb-4">Adivinhe um número entre 1 e 100.</p>
+                    <input id="guess-input" type="number" class="w-full p-2 rounded text-black mb-2" placeholder="Digite seu palpite">
+                    <button id="submit-guess" class="px-4 py-2 bg-orange-500 rounded text-white w-full mb-2">Enviar</button>
+                    <p id="feedback" class="text-sm"></p>
+                </div>
+            </div>
+
+            <!-- 2. Calculadora Inteligente -->
+            <div id="modal-calculadora" class="fixed inset-0 bg-black/70 flex items-center justify-center hidden z-50">
+                <div class="glass-card rounded-2xl p-6 max-w-lg w-full relative mx-auto">
+                    <button class="absolute top-3 right-3 text-white/70 hover:text-white" onclick="closeModal('modal-calculadora')">✖</button>
+                    <h2 class="text-xl font-bold mb-4">📊 Calculadora Inteligente</h2>
+                    <div class="space-y-2">
+                        <input id="calc-input" type="text" class="w-full p-2 rounded text-black" placeholder="Digite a operação (ex: 2 + 3)">
+                        <button id="calc-submit" class="px-4 py-2 bg-orange-500 rounded text-white w-full mb-2">Calcular</button>
+                        <p id="calc-result" class="mt-4 font-bold"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Verificador Par/Ímpar -->
+            <div id="modal-parimpar" class="fixed inset-0 bg-black/70 flex items-center justify-center hidden z-50">
+                <div class="glass-card rounded-2xl p-6 max-w-lg w-full relative mx-auto">
+                    <button class="absolute top-3 right-3 text-white/70 hover:text-white" onclick="closeModal('modal-parimpar')">✖</button>
+                    <h2 class="text-xl font-bold mb-4">🔍 Verificador Par/Ímpar</h2>
+                    <p class="mb-4">Digite um número para verificar:</p>
+                    <input id="parimpar-input" type="number" class="w-full p-2 rounded text-black mb-2" placeholder="Número">
+                    <button id="parimpar-submit" class="px-4 py-2 bg-orange-500 rounded text-white w-full mb-2">Verificar</button>
+                    <p id="parimpar-result" class="text-sm"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center space-y-4 mb-16" data-animate>
+                <h2 class="text-3xl sm:text-4xl font-bold">
+                    Entre em <span class="gradient-text">Contato</span>
+                </h2>
+                <p class="text-lg text-white/70 max-w-2xl mx-auto">
+                    Pronta para transformar suas ideias em realidade digital? Vamos conversar!
+                </p>
+            </div>
+
+            <div class="glass-card rounded-3xl p-8 sm:p-12" data-animate>
+                <form id="contact-form" action="https://formspree.io/f/mqaylarv" method="POST" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label for="name" class="block text-sm font-medium text-white/80">Nome completo</label>
+                            <div class="relative">
+                                <i data-lucide="user" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-white/60"></i>
+                                <input type="text" id="name" name="name" required
+                                       class="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/40 focus:border-orange-400/50 focus:ring-2 focus:ring-orange-400/25 focus:outline-none transition-all"
+                                       placeholder="Seu nome">
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="email" class="block text-sm font-medium text-white/80">E-mail</label>
+                            <div class="relative">
+                                <i data-lucide="mail" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-white/60"></i>
+                                <input type="email" id="email" name="email" required
+                                       class="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/40 focus:border-orange-400/50 focus:ring-2 focus:ring-orange-400/25 focus:outline-none transition-all"
+                                       placeholder="seu@email.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="subject" class="block text-sm font-medium text-white/80">Assunto</label>
+                        <div class="relative">
+                            <i data-lucide="tag" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-white/60"></i>
+                            <input type="text" id="subject" name="subject" required
+                                   class="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/40 focus:border-orange-400/50 focus:ring-2 focus:ring-orange-400/25 focus:outline-none transition-all"
+                                   placeholder="Como posso ajudar?">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="message" class="block text-sm font-medium text-white/80">Mensagem</label>
+                        <div class="relative">
+                            <i data-lucide="message-square" class="absolute left-3 top-4 w-4 h-4 text-white/60"></i>
+                            <textarea id="message" name="message" rows="5" required
+                                      class="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/40 focus:border-orange-400/50 focus:ring-2 focus:ring-orange-400/25 focus:outline-none transition-all resize-none"
+                                      placeholder="Conte-me sobre seu projeto..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Mensagem de sucesso (inicialmente oculta) -->
+                    <div id="form-message" class="hidden p-4 rounded-xl text-center">
+                        <div class="text-green-400 font-medium">✅ Mensagem enviada com sucesso!</div>
+                        <div class="text-white/70 text-sm mt-1">Entrarei em contato em breve.</div>
+                    </div>
+
+                    <button type="submit" class="w-full px-6 py-4 rounded-xl text-white font-medium shadow-lg transition-all duration-300 hover:scale-105" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+                        <i data-lucide="send" class="w-5 h-5 inline mr-2"></i>
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="grid md:grid-cols-3 gap-6 mt-12" data-animate>
+                <div class="glass-card rounded-2xl p-6 text-center">
+                    <div class="w-12 h-12 rounded-xl bg-orange-500/20 border border-orange-400/30 flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="mail" class="w-6 h-6 text-orange-400"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">E-mail</h3>
+                    <p class="text-white/70 text-sm">db.empreendimentosptbr@gmail.com</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 text-center">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 border border-purple-400/30 flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="phone" class="w-6 h-6 text-purple-400"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Telefone</h3>
+                    <p class="text-white/70 text-sm">+351 963 674 940</p>
+                </div>
+
+                <div class="glass-card rounded-2xl p-6 text-center">
+                    <div class="w-12 h-12 rounded-xl bg-green-500/20 border border-green-400/30 flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-green-400"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">Localização</h3>
+                    <p class="text-white/70 text-sm">Lisboa, PT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Footer -->
+<footer class="py-12 px-4 sm:px-6 border-t border-white/10">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/20 border border-orange-400/30 flex items-center justify-center">
+                    <i data-lucide="code" class="w-5 h-5 text-orange-400"></i>
+                </div>
+                <div>
+                    <div class="text-sm font-semibold">Deborah</div>
+                    <div class="text-xs text-white/60">Desenvolvedora com Visão de Produto</div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/deborahhevelyn86-devMynd" target="_blank" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center hover:bg-white/20 transition-all">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/deborah-hevelyn-6ba016250/" target="_blank" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center hover:bg-white/20 transition-all">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                </a>
+                <a href="https://instagram.com/dev.mynd" target="_blank" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center hover:bg-white/20 transition-all">
+                    <i data-lucide="instagram" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="text-sm text-white/60">
+                © 2025 Deborah. Todos os direitos reservados.
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 rounded-xl glass-card flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-50">
+    <i data-lucide="chevron-up" class="w-5 h-5"></i>
+</button>
+
+<!-- Scripts -->
+<script type="module" src="js/main.js" defer></script>
+
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Initialize animations on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe all elements with data-animate
+    document.querySelectorAll('[data-animate]').forEach(el => {
+        observer.observe(el);
+    });
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileMenuOverlay.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+            backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+        } else {
+            backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+            backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Project Filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            btn.classList.add('active');
+
+            const filter = btn.getAttribute('data-filter');
+
+            projectItems.forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Contact Form
+const contactForm = document.getElementById('contact-form');
+const formMessage = document.getElementById('form-message');
+
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault(); // Impede o envio normal
+
+    // Pega os dados do formulário
+    const formData = new FormData(contactForm);
+
+    try {
+        // Envia via AJAX para o Formspree
+        const response = await fetch('https://formspree.io/f/mqaylarv', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            // Sucesso - mostra mensagem e limpa formulário
+            formMessage.classList.remove('hidden');
+            formMessage.classList.add('bg-green-500/20', 'border', 'border-green-400/30');
+            contactForm.reset();
+
+            // Esconde a mensagem após 5 segundos
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 5000);
+        } else {
+            throw new Error('Erro no envio');
+        }
+    } catch (error) {
+        // Erro - mostra mensagem de erro
+        formMessage.classList.remove('hidden');
+        formMessage.classList.add('bg-red-500/20', 'border', 'border-red-400/30');
+        formMessage.innerHTML = `
+            <div class="text-red-400 font-medium">❌ Erro ao enviar mensagem</div>
+            <div class="text-white/70 text-sm mt-1">Tente novamente ou entre em contato diretamente.</div>
+        `;
+
+        // Esconde a mensagem após 5 segundos
+        setTimeout(() => {
+            formMessage.classList.add('hidden');
+        }, 5000);
+    }
+});
+
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+    });
+
+    // Modal functions
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+    // Game logic for modals (mantido do original)
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+
+    document.getElementById('submit-guess').addEventListener('click', function() {
+        const guess = parseInt(document.getElementById('guess-input').value);
+        const feedback = document.getElementById('feedback');
+        attempts++;
+
+        if (guess === randomNumber) {
+            feedback.textContent = `Parabéns! Você acertou em ${attempts} tentativas!`;
+            feedback.style.color = 'green';
+        } else if (guess < randomNumber) {
+            feedback.textContent = 'Muito baixo! Tente um número maior.';
+            feedback.style.color = 'orange';
+        } else {
+            feedback.textContent = 'Muito alto! Tente um número menor.';
+            feedback.style.color = 'orange';
+        }
+    });
+
+    // Calculator logic
+    document.getElementById('calc-submit').addEventListener('click', function() {
+        const input = document.getElementById('calc-input').value;
+        const result = document.getElementById('calc-result');
+
+        try {
+            const calculation = eval(input);
+            result.textContent = `Resultado: ${calculation}`;
+            result.style.color = 'green';
+        } catch (error) {
+            result.textContent = 'Erro na operação. Verifique a entrada.';
+            result.style.color = 'red';
+        }
+    });
+
+    // Par/Ímpar logic
+    document.getElementById('parimpar-submit').addEventListener('click', function() {
+        const number = parseInt(document.getElementById('parimpar-input').value);
+        const result = document.getElementById('parimpar-result');
+
+        if (isNaN(number)) {
+            result.textContent = 'Por favor, digite um número válido.';
+            result.style.color = 'red';
+        } else if (number % 2 === 0) {
+            result.textContent = `${number} é PAR`;
+            result.style.color = 'green';
+        } else {
+            result.textContent = `${number} é ÍMPAR`;
+            result.style.color = 'blue';
+        }
+    });
+</script>
+</body>
+</html>
